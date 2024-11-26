@@ -10,3 +10,17 @@ Evaluating the impact of urban infrastructure, such as buildings and street layo
 Assessing the effectiveness of empirical path loss models, such as Okumura-Hata and Friis, by comparing their predictions with measured data.
 Developing tools and methodologies for systematic data collection, analysis, and visualization of path loss metrics.
 Providing actionable insights for optimizing antenna placement and network design in similar urban settings.
+
+# Previous knoledge
+
+
+
+
+# Results
+
+
+
+# Analysis
+
+
+# Conclusion
