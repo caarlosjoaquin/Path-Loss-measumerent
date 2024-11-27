@@ -106,7 +106,7 @@ P_r \, \text{(dBm)} = P_t \, \text{(dBm)} - \left[20 \log_{10}(d) + 20 \log_{10}
 $$
 
 **Where:**
-- $\P_r\$: Received power in dBm.  
+- $P_r$: Received power in dBm.  
 - $\P_t\$: Transmitted power in dBm.  
 - $\d\$: Distance between transmitter and receiver (m).  
 - $\f\$: Operating frequency (Hz).  
