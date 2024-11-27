@@ -34,7 +34,7 @@ Material efficiency describes the impact of the materials used in the constructi
 
 By understanding and optimizing these parameters, antenna designers can enhance radiation efficiency, ensuring that antennas meet the performance demands of modern communication systems. These considerations are especially critical in applications requiring high power efficiency, minimal losses, and reliable signal transmission over varying distances and environments.
 
-Impact of Urban Environments on Communication Systems:
+## Impact of Urban Environments on Communication Systems:
 
 The performance and reliability of the telecommunications systems are significantly influenced by various propagation phenomena, including Building Attenuation, Reflection, Diffraction, Scattering, and Shadowing. Understanding these effects is crucial for designing robust communication networks in urban areas.
 
@@ -55,7 +55,7 @@ Shadowing occurs when obstacles completely block the direct path of the signal, 
 
 In summary, urban environments introduce a range of propagation challenges that significantly impact signal quality, reliability, and network performance. Effective communication system design must account for these phenomena, employing advanced modeling techniques and technologies such as adaptive beamforming, multiple-input multiple-output (MIMO), and small cell deployments to overcome the limitations posed by urban infrastructure.
 
-Phenomenon of Power Loss (Path Loss)
+## Phenomenon of Power Loss (Path Loss)
 
 Path loss, or power loss, is a fundamental phenomenon in wireless communication systems that describes the attenuation of a signal as it propagates from the transmitter to the receiver. This attenuation increases with the distance between the two points, posing a significant challenge for maintaining reliable connectivity, especially in large-scale networks or adverse environments. 
 
@@ -70,13 +70,13 @@ The surrounding environment introduces significant variability in path loss. Ope
 
 # Methodology
 
-Field Measurements: Data collection in an urban environment
+## Field Measurements: Data collection in an urban environment
 
 To capture real world signal behavior, field measurements were conducted along a designated urban street, the antenna is located at the intersection of Domyeko and Republica streets in a central area of ​​Santiago de Chile. Measurement points were systematically spaced at intervals of 10 meters with Google Street, covering a range of distances from the transmitter. At each point, 100 individual measurements were recorded to ensure statistical robustness.
 
 The measured parameters included Reference Signal Received Power (RSRP), Signal-to-Noise and Interference Ratio (SINR), RSRQ,	CE,	BER,	Tempeture and	humidity. These data were collected using calibrated measurement equipment to ensure accuracy and consistency.
 
-Methodological Challenges: Errors and Uncertainties
+## Methodological Challenges: Errors and Uncertainties
 
 1. While field measurements provide valuable empirical data, various factors contribute to potential errors and uncertainties:
 
@@ -87,7 +87,7 @@ Methodological Challenges: Errors and Uncertainties
 Environmental Changes: Temporary obstacles, such as parked vehicles or construction activities, can alter the propagation path and lead to deviations from theoretical predictions.
 
 
-Comparative Analysis
+## Comparative Analysis
 
 The study involves generating two distinct path loss curves:
 
@@ -97,15 +97,51 @@ The study involves generating two distinct path loss curves:
 
 Both curves are analyzed and compared to identify discrepancies and validate the accuracy of the theoretical models.
 
-Simulation Integration
+## Teorical models
+
+### Friss
+
+$$
+P_r \, \text{(dBm)} = P_t \, \text{(dBm)} - \left[20 \log_{10}(d) + 20 \log_{10}(f) + 20 \log_{10}\left(\frac{4\pi}{c}\right)\right]
+$$
+
+**Where:**
+- \(P_r\): Received power in dBm.  
+- \(P_t\): Transmitted power in dBm.  
+- \(d\): Distance between transmitter and receiver (m).  
+- \(f\): Operating frequency (Hz).  
+- \(c\): Speed of light (\(3 \times 10^8 \, \text{m/s}\)).  
+
+### Okomura-Hata
+
+$$
+P_r \, \text{(dBm)} = P_t \, \text{(dBm)} - \left[69.55 + 26.16 \log_{10}(f) - 13.82 \log_{10}(h_b) - a(h_r) + \left(44.9 - 6.55 \log_{10}(h_b)\right)\log_{10}(d)\right]
+$$
+
+
+**Where:**
+- \(P_r\): Received power in dBm.  
+- \(P_t\): Transmitted power in dBm.  
+- \(f\): Frequency (MHz).  
+- \(h_b\): Height of the transmitter antenna (m).  
+- \(h_r\): Height of the receiver antenna (m).  
+- \(a(h_r)\): Correction factor for receiver antenna height:
+  $$
+  a(h_r) = \begin{cases} 
+  3.2 (\log_{10}(11.75 h_r))^2 - 4.97, & \text{if } f > 400 \, \text{MHz} \\ 
+  8.29 (\log_{10}(1.54 h_r))^2 - 1.1, & \text{if } f \leq 400 \, \text{MHz}
+  \end{cases}
+  $$
+- \(d\): Distance between transmitter and receiver (km). 
+
+
+## Simulation Integration
 
 The simulated results obtained from Radio Mobile serve as an intermediary between the theoretical and measured curves. By incorporating terrain data and environmental parameters, the software provides a nuanced representation of signal propagation that accounts for some real world factors.
 
 The final analysis juxtaposes the theoretical, simulated, and measured path loss curves to evaluate their alignment and identify the conditions under which each model performs optimally. This comparison is essential for refining propagation models and improving the predictability of wireless network performance in urban environments.
 
-Results
-
-Teorical 
+ 
 
 
 # Analysis
