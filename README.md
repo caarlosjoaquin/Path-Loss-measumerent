@@ -151,7 +151,7 @@ The resulting path loss curve, while not perfect, provides valuable insights int
 
 The urban environment introduces unique challenges to wireless communication. Structures like high-rise buildings cause substantial signal attenuation, while reflections from surfaces can lead to multipath interference. Diffraction around corners and scattering from irregular surfaces further degrade signal quality, making precise prediction of path loss critical for network design. Understanding these phenomena through the analysis of the curve allows for more effective planning and deployment of communication systems in urban areas. For instance, the identification of high-attenuation zones can guide the strategic placement of repeaters, base stations, or other infrastructure to mitigate signal degradation.
 
-## Applications to Network Design and Improvements in Methodology
+### Applications to Network Design and Improvements in Methodology
 
 The insights gained from studying the path loss curve are instrumental in optimizing network performance. By accurately modeling the signal attenuation, engineers can tailor system parameters such as transmission power, antenna placement, and frequency selection to meet the specific requirements of a given environment. Furthermore, these observations can guide the design of adaptive systems that dynamically adjust to changing conditions, ensuring reliable communication even in complex urban settings.
 
