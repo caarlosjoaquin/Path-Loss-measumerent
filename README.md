@@ -13,7 +13,7 @@ Providing actionable insights for optimizing antenna placement and network desig
 
 # Theoretical Framework
 
-Key parameters in antenna radiation efficiency:
+## Key parameters in antenna radiation efficiency:
 
 Antenna radiation efficiency is a fundamental metric that determines how effectively an antenna converts input power into radiated electromagnetic energy. Several key parameters influence this efficiency, including Antenna Gain, Directivity, Polarization, Impedance, and Material Efficiency. These parameters collectively define the performance and suitability of an antenna for specific applications in wireless communication.:
 
