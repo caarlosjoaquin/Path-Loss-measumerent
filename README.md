@@ -144,7 +144,12 @@ The simulated results obtained from Radio Mobile serve as an intermediary betwee
 
 The final analysis juxtaposes the theoretical, simulated, and measured path loss curves to evaluate their alignment and identify the conditions under which each model performs optimally. This comparison is essential for refining propagation models and improving the predictability of wireless network performance in urban environments.
 
- 
+#Results
+
+![Comparación de los datos recopilados con los modelos teoricos](escritorio/todo_junto.png "Comparación de los datos recopilados con los modelos teoricos")
+
+
+
 # Analysis
 
 The resulting path loss curve, while not perfect, provides valuable insights into the behavior of signal attenuation as a function of distance. This curve highlights the fundamental relationship between increasing distance and diminishing received power, enabling the identification of key phenomena such as reflection, diffraction, scattering, and shadowing. These factors are strongly influenced by urban elements such as buildings, vehicles, and other obstacles, which contribute to unpredictable variations in the received signal. Despite the presence of deviations caused by random and systematic errors, the general trend aligns with theoretical models, affirming the utility of this approach.
@@ -161,3 +166,25 @@ To enhance the accuracy of future measurements, it is essential to address both 
 # Conclusion
 
 In conclusion, while the path loss curve may exhibit imperfections, it offers a powerful tool for understanding the interplay of distance and environmental factors in signal attenuation. These insights not only aid in diagnosing and mitigating issues in existing networks but also pave the way for the design of more resilient and efficient communication systems. By addressing measurement errors and leveraging both theoretical and empirical models, the accuracy and applicability of path loss studies can be significantly enhanced, ultimately contributing to the advancement of wireless communication technologies.
+
+
+# References
+
+1. M. Moreno et al., "NB-IoT Path Loss Experimental Measurements in Urban Outdoor Environments," 2024 14th International Symposium on Communication Systems, Networks and Digital Signal Processing (CSNDSP), Rome, Italy, 2024, pp. 120-124.
+
+2. G. Caso, Ö. Alay, L. De Nardis, A. Brunström, M. Neri, and M. G. Di Benedetto, "Empirical Models for NB-IoT Path Loss in an Urban Scenario," IEEE Internet of Things Journal, vol. 8, no. 17, pp. 13774–13788, Sep. 2021, doi: 10.1109/JIOT.2021.3068148
+
+3. M. Hata, "Empirical formula for propagation loss in land mobile radio services," IEEE Transactions on Vehicular Technology, vol. 29, no. 3, pp. 317–325, 1980.
+
+4. W. L. Stutzman and G. A. Thiele, Antenna Theory and Design, 2nd ed. New York, NY, USA: Wiley, 1998.
+
+5. H. T. Friis, "A note on a simple transmission formula," Proceedings of the IRE, vol. 34, no. 5, pp. 254–256, May 1946.
+​
+6. S. Saunders and A. Aragón-Zavala, Antennas and Propagation for Wireless Communication Systems, 2nd ed., Wiley, 2007
+
+7. "Urban Radio Propagation Models," IEEE Communications Magazine, vol. 52, no. 9, pp. 90-96, 2014.
+
+8. R. H. Clarke, "A statistical theory of mobile-radio reception," The Bell System Technical Journal, vol. 47, no. 6, pp. 957-1000, 1968.
+
+
+
