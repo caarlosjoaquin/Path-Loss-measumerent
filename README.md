@@ -106,11 +106,11 @@ P_r \, \text{(dBm)} = P_t \, \text{(dBm)} - \left[20 \log_{10}(d) + 20 \log_{10}
 $$
 
 **Where:**
-- $\(P_r\)$: Received power in dBm.  
-- $\(P_t\)$: Transmitted power in dBm.  
-- $\(d\)$: Distance between transmitter and receiver (m).  
-- \(f\): Operating frequency (Hz).  
-- \(c\): Speed of light (\(3 \times 10^8 \, \text{m/s}\)).  
+- $\P_r\$: Received power in dBm.  
+- $\P_t\$: Transmitted power in dBm.  
+- $\d\$: Distance between transmitter and receiver (m).  
+- $\f\$: Operating frequency (Hz).  
+- $\c\$: Speed of light (\(3 \times 10^8 \, \text{m/s}\)).  
 
 ### Okomura-Hata
 
@@ -120,19 +120,19 @@ $$
 
 
 **Where:**
-- \(P_r\): Received power in dBm.  
-- \(P_t\): Transmitted power in dBm.  
-- \(f\): Frequency (MHz).  
-- \(h_b\): Height of the transmitter antenna (m).  
-- \(h_r\): Height of the receiver antenna (m).  
-- \(a(h_r)\): Correction factor for receiver antenna height:
+- $\P_r\$: Received power in dBm.  
+- $\P_t\$: Transmitted power in dBm.  
+- $\f\$: Frequency (MHz).  
+- $\h_b\$: Height of the transmitter antenna (m).  
+- $\h_r\$: Height of the receiver antenna (m).  
+- $\a(h_r)\$: Correction factor for receiver antenna height:
   $$
   a(h_r) = \begin{cases} 
   3.2 (\log_{10}(11.75 h_r))^2 - 4.97, & \text{if } f > 400 \, \text{MHz} \\ 
   8.29 (\log_{10}(1.54 h_r))^2 - 1.1, & \text{if } f \leq 400 \, \text{MHz}
   \end{cases}
   $$
-- \(d\): Distance between transmitter and receiver (km). 
+- $\d\$: Distance between transmitter and receiver (km). 
 
 
 ## Simulation Integration
