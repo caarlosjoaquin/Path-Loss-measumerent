@@ -101,6 +101,10 @@ Both curves are analyzed and compared to identify discrepancies and validate the
 
 ### Friss
 
+The Friis model describes the power loss of a signal in free space as a function of distance and frequency. It assumes an ideal, unobstructed environment and calculates the received power based on the inverse square law. This model is commonly used for line-of-sight communication scenarios.
+
+The formula in dBm calculates power loss in free space conditions:
+
 $$
 P_r \, \text{(dBm)} = P_t \, \text{(dBm)} - \left[20 \log_{10}(d) + 20 \log_{10}(f) + 20 \log_{10}\left(\frac{4\pi}{c}\right)\right]
 $$
@@ -113,6 +117,11 @@ $$
 - $c$: Speed of light (\(3 \times 10^8 \, \text{m/s}\)).  
 
 ### Okomura-Hata
+
+The Okumura-Hata model is an empirical path loss model tailored for urban, suburban, and rural environments. It extends the Friis model by incorporating corrections for frequency, transmitter and receiver heights, and environmental factors. This model is widely used for mobile communication systems operating between 150 MHz and 2000 MHz.
+
+The Hata model in dBm calculates power loss in urban environments:
+
 
 $$
 P_r \, \text{(dBm)} = P_t \, \text{(dBm)} - \left[69.55 + 26.16 \log_{10}(f) - 13.82 \log_{10}(h_b) - a(h_r) + \left(44.9 - 6.55 \log_{10}(h_b)\right)\log_{10}(d)\right]
@@ -136,10 +145,19 @@ The simulated results obtained from Radio Mobile serve as an intermediary betwee
 The final analysis juxtaposes the theoretical, simulated, and measured path loss curves to evaluate their alignment and identify the conditions under which each model performs optimally. This comparison is essential for refining propagation models and improving the predictability of wireless network performance in urban environments.
 
  
-
-
 # Analysis
 
+The resulting path loss curve, while not perfect, provides valuable insights into the behavior of signal attenuation as a function of distance. This curve highlights the fundamental relationship between increasing distance and diminishing received power, enabling the identification of key phenomena such as reflection, diffraction, scattering, and shadowing. These factors are strongly influenced by urban elements such as buildings, vehicles, and other obstacles, which contribute to unpredictable variations in the received signal. Despite the presence of deviations caused by random and systematic errors, the general trend aligns with theoretical models, affirming the utility of this approach.
+
+The urban environment introduces unique challenges to wireless communication. Structures like high-rise buildings cause substantial signal attenuation, while reflections from surfaces can lead to multipath interference. Diffraction around corners and scattering from irregular surfaces further degrade signal quality, making precise prediction of path loss critical for network design. Understanding these phenomena through the analysis of the curve allows for more effective planning and deployment of communication systems in urban areas. For instance, the identification of high-attenuation zones can guide the strategic placement of repeaters, base stations, or other infrastructure to mitigate signal degradation.
+
+## Applications to Network Design and Improvements in Methodology
+
+The insights gained from studying the path loss curve are instrumental in optimizing network performance. By accurately modeling the signal attenuation, engineers can tailor system parameters such as transmission power, antenna placement, and frequency selection to meet the specific requirements of a given environment. Furthermore, these observations can guide the design of adaptive systems that dynamically adjust to changing conditions, ensuring reliable communication even in complex urban settings.
+
+To enhance the accuracy of future measurements, it is essential to address both random and systematic errors. Random errors, often introduced by traffic, pedestrian movement, or environmental noise, can be minimized by performing multiple measurements and averaging the results to reduce statistical variance. Systematic errors, such as calibration mismatches in equipment or imprecise location tracking, can be mitigated by employing standardized protocols and using high-precision measurement tools. Advanced simulation software, such as Radio Mobile, can also be used to cross-validate empirical data and refine theoretical models.
 
 
 # Conclusion
+
+In conclusion, while the path loss curve may exhibit imperfections, it offers a powerful tool for understanding the interplay of distance and environmental factors in signal attenuation. These insights not only aid in diagnosing and mitigating issues in existing networks but also pave the way for the design of more resilient and efficient communication systems. By addressing measurement errors and leveraging both theoretical and empirical models, the accuracy and applicability of path loss studies can be significantly enhanced, ultimately contributing to the advancement of wireless communication technologies.
