@@ -144,7 +144,7 @@ The simulated results obtained from Radio Mobile serve as an intermediary betwee
 
 The final analysis juxtaposes the theoretical, simulated, and measured path loss curves to evaluate their alignment and identify the conditions under which each model performs optimally. This comparison is essential for refining propagation models and improving the predictability of wireless network performance in urban environments.
 
-#Results
+# Results
 
 ![Comparación de los datos recopilados con los modelos teoricos](escritorio/todo_junto.png "Comparación de los datos recopilados con los modelos teoricos")
 
