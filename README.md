@@ -78,11 +78,11 @@ The measured parameters included Reference Signal Received Power (RSRP), Signal-
 
 Methodological Challenges: Errors and Uncertainties
 
-While field measurements provide valuable empirical data, various factors contribute to potential errors and uncertainties:
+1. While field measurements provide valuable empirical data, various factors contribute to potential errors and uncertainties:
 
-Street Traffic: Vehicular movement introduce dynamic obstructions and scattering effects, causing variations in signal strength.
+2. Street Traffic: Vehicular movement introduce dynamic obstructions and scattering effects, causing variations in signal strength.
 
-Weather Conditions: Fluctuations in atmospheric conditions, such as humidity and temperature, may affect signal propagation during measurements.
+3. Weather Conditions: Fluctuations in atmospheric conditions, such as humidity and temperature, may affect signal propagation during measurements.
 
 Environmental Changes: Temporary obstacles, such as parked vehicles or construction activities, can alter the propagation path and lead to deviations from theoretical predictions.
 
@@ -91,9 +91,9 @@ Comparative Analysis
 
 The study involves generating two distinct path loss curves:
 
-Theoretical Path Loss: Derived from the models implemented in Radio Mobile and traditional formulas, representing the ideal propagation scenario.
+1. Theoretical Path Loss: Derived from the models implemented in Radio Mobile and traditional formulas, representing the ideal propagation scenario.
 
-Measured Path Loss: Based on empirical data collected during fieldwork, reflecting real-world signal attenuation in an urban street environment.
+2. Measured Path Loss: Based on empirical data collected during fieldwork, reflecting real-world signal attenuation in an urban street environment.
 
 Both curves are analyzed and compared to identify discrepancies and validate the accuracy of the theoretical models.
 
