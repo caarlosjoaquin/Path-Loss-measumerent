@@ -146,8 +146,15 @@ The final analysis juxtaposes the theoretical, simulated, and measured path loss
 
 # Results
 
-![Comparación de los datos recopilados con los modelos teoricos](escritorio/todo_junto.png "Comparación de los datos recopilados con los modelos teoricos")
+The outcomes of the project span two primary areas: laboratory simulations and fieldwork measurements.
 
+In the laboratory domain, the theoretical models for path loss were successfully analyzed and visualized. Specifically, the Friis transmission equation and the Okumura-Hata model were implemented and plotted, enabling a understanding of signal attenuation under idealized and empiricalls conditions. These plots served as a reference for subsequent comparisons with real world data and software based simulations.
+
+In the practical fieldwork, datasets were collected through systematic measurements with IoT Narrowband system. CSV files were generated at each location, containing all the key performance indicators (KPIs) necessary for evaluating path loss, including parameters such as RSRP, SINR, and RSSI. For each measured location, averages and standard deviations of these KPIs were calculated, ensuring the robustness of the analysis. Furthermore, each data point was carefully associated with its respective location, and precise distances from the transmitter were determined to support spatial analysis.
+
+The fieldwork data enabled the construction of a path loss curve in dBm, which was then compared against the theoretical models of Friis and Okumura-Hata. Additionally, these real world results were contrasted with simulations conducted using the Radio Mobile software.
+
+Although a perfect characterization of the path loss was not achieved, the decay of power with distance and how the urban environment intervenes in the phenomenon of electromagnetic radiation can be corroborated.
 
 
 # Analysis
