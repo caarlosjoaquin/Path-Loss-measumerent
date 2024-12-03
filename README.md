@@ -137,6 +137,10 @@ $$
 - $a(h_r)$: Correction factor for receiver antenna height:
 - $d$: Distance between transmitter and receiver (km). 
 
+To obtain the path loss from the KPI "RSRP" the following expression is applied:
+
+Path Loss \, \text{(dBm)} = Valor de referencia \text{(dBm)} - RSRP promedio \text{(dBm)}
+
 
 ## Simulation Integration
 
@@ -155,7 +159,6 @@ In the practical fieldwork, datasets were collected through systematic measureme
 The fieldwork data enabled the construction of a path loss curve in dBm, which was then compared against the theoretical models of Friis and Okumura-Hata. Additionally, these real world results were contrasted with simulations conducted using the Radio Mobile software.
 
 Although a perfect characterization of the path loss was not achieved, the decay of power with distance and how the urban environment intervenes in the phenomenon of electromagnetic radiation can be corroborated.
-
 
 # Analysis
 
