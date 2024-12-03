@@ -97,6 +97,12 @@ The study involves generating two distinct path loss curves:
 
 Both curves are analyzed and compared to identify discrepancies and validate the accuracy of the theoretical models.
 
+To obtain the path loss from "RSRP", the following expression is applied:
+
+$$
+Path Loss \, \text{(dBm)} = Valor de referencia \text{(dBm)} - RSRP promedio \text{(dBm)}
+$$
+
 ## Teorical models
 
 ### Friss
@@ -137,9 +143,6 @@ $$
 - $a(h_r)$: Correction factor for receiver antenna height:
 - $d$: Distance between transmitter and receiver (km). 
 
-To obtain the path loss from the KPI "RSRP" the following expression is applied:
-
-Path Loss \, \text{(dBm)} = Valor de referencia \text{(dBm)} - RSRP promedio \text{(dBm)}
 
 
 ## Simulation Integration
