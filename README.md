@@ -100,7 +100,7 @@ Both curves are analyzed and compared to identify discrepancies and validate the
 To obtain the path loss from "RSRP", the following expression is applied:
 
 $$
-Path Loss \, \text{(dBm)} = Valor de referencia \text{(dBm)} - RSRP promedio \text{(dBm)}
+Path Loss \text{(dBm)} = Valor_referencia \text{(dBm)} - RSRP_promedio \text{(dBm)}
 $$
 
 ## Teorical models
@@ -142,6 +142,8 @@ $$
 - $h_r$: Height of the receiver antenna (m).  
 - $a(h_r)$: Correction factor for receiver antenna height:
 - $d$: Distance between transmitter and receiver (km). 
+
+### PL model for cellular system:
 
 
 
