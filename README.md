@@ -150,8 +150,7 @@ The Alpha-Beta-Gamma (ABG) model is a path loss model used to estimate signal at
 The formula in dB calculates the path loss as:
 
 $$
-PL_ABC
-P_r \, \text{(dBm)} = P_t \, \text{(dBm)} - \left[69.55 + 26.16 \log_{10}(f) - 13.82 \log_{10}(h_b) - a(h_r) + \left(44.9 - 6.55 \log_{10}(h_b)\right)\log_{10}(d)\right]
+PL_{ABG} \, \text{(dB)} = \left[10 \cdot \alpha \cdot \log_{10}(d)\right] + \left[10 \cdot \beta \cdot \log_{10}(f_c)\right] + l_0
 $$
 
 
