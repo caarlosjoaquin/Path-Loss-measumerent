@@ -143,11 +143,16 @@ $$
 - $a(h_r)$: Correction factor for receiver antenna height:
 - $d$: Distance between transmitter and receiver (km). 
 
-### PL model for cellular system:
+### Alpha-Beta-Gamma (ABG):
 ###
 The Alpha-Beta-Gamma (ABG) model is a path loss model used to estimate signal attenuation in wireless communication environments, particularly in NB-IoT applications. This model considers both distance and frequency as key factors, offering a more precise estimation compared to simpler models.
 
 The formula in dB calculates the path loss as:
+
+$$
+PL_ABC
+P_r \, \text{(dBm)} = P_t \, \text{(dBm)} - \left[69.55 + 26.16 \log_{10}(f) - 13.82 \log_{10}(h_b) - a(h_r) + \left(44.9 - 6.55 \log_{10}(h_b)\right)\log_{10}(d)\right]
+$$
 
 
 ## Simulation Integration
