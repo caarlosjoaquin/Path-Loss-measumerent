@@ -153,6 +153,29 @@ $$
 PL_{ABG} \, \text{(dB)} = \left[10 \cdot \alpha \cdot \log_{10}(d)\right] + \left[10 \cdot \beta \cdot \log_{10}(f_c)\right] + l_0
 $$
 
+**Where:**
+- $PL_{ABG}$: Path loss in dB.
+- $d$: Distance between the transmitter and receiver in kilometers.
+- $f_c$: Carrier frequency in MHz.
+- $\alpha$: Distance-dependent exponent.
+- $\beta$: Frequency-dependent exponent.
+- $l_0$: Path loss at a reference distance, typically a fixed value in dB.
+
+**Explanation:**
+1. **Distance Contribution ($10 \cdot \alpha \cdot \log_{10}(d)$):**  
+   This term models how signal attenuation increases with the distance $d$. The exponent $\alpha$ determines the rate of attenuation based on distance.
+
+2. **Frequency Contribution ($10 \cdot \beta \cdot \log_{10}(f_c)$):**  
+   This term accounts for the effect of frequency on path loss. The carrier frequency $f_c$ influences how signals interact with the environment, with $\beta$ tuning this relationship.
+
+3. **Reference Loss ($l_0$):**  
+   Represents the path loss at a reference distance, encompassing fixed losses due to antennas, environmental conditions, or calibration.
+
+This model is particularly well-suited for scenarios where both distance and frequency play critical roles, as is common in NB-IoT deployments.
+
+
+
+
 
 ## Simulation Integration
 
