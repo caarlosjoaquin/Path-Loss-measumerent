@@ -144,7 +144,10 @@ $$
 - $d$: Distance between transmitter and receiver (km). 
 
 ### PL model for cellular system:
+###
+The Alpha-Beta-Gamma (ABG) model is a path loss model used to estimate signal attenuation in wireless communication environments, particularly in NB-IoT applications. This model considers both distance and frequency as key factors, offering a more precise estimation compared to simpler models.
 
+The formula in dB calculates the path loss as:
 
 
 ## Simulation Integration
